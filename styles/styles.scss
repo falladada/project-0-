@@ -1,0 +1,100 @@
+/* Variables */
+$fontcolor-lpa: black;
+$fontsize-lpa: 17px;
+$font-color-nav: black;
+
+/*Styles*/
+
+
+
+// @media
+@media print {
+  .flex-lg-column {
+    display: none;
+  }
+}
+
+body {
+  height: 100%;
+  background-color: lightgrey;
+}
+
+.row {
+  height: 100%;
+}
+
+// picture-container
+.picture-container {
+  width: 100%;
+  text-align: center;
+  margin-top: 10%;
+}
+#frontpage-picture {
+  width: 40%;
+}
+
+// NAVBAR
+.col-2 {
+  background-color: lightgrey;
+  height: 100%;
+  position: fixed;
+  margin: 0 0 0 0;
+}
+.col-2 h1,h2,h3,li {
+  text-transform: uppercase;
+  line-height: 1.8;
+  color: $font-color-nav;
+}
+
+
+.flex-lg-column ul {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.flex-lg-column li {
+}
+
+.nav-item {
+ a {
+  color: black;
+  z-index: 10;
+  text-align: center;
+  font-weight: bolder;
+}
+a:hover {
+  background-color: orange;
+}
+a:active {
+  @extend .nav-item;
+  font-size: 120%;
+}
+}
+
+//Text-DIV
+.col-10 {
+  background-color: lightgrey;
+  height: 100%;
+  margin: 0 0 0 16.66%;
+}
+
+
+// Home, Info, Glossary
+.textcontainer {
+  margin: 10% 10% 10% 10%;
+}
+
+//TLP
+table {
+  border-collapse: separate;
+  border-spacing: 10px 10px;
+  font-size: $fontsize-lpa;
+}
+.ger, .ogd, .pmc td {
+  font-size: $fontsize-lpa;
+
+
+}
